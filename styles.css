@@ -1,0 +1,445 @@
+/* RESET */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* CONTAINER PRINCIPAL */
+main{
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+}
+.principal{
+    width: 100vw;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    margin: 10px 50px 50px;
+}
+
+/* CONTAINER DO USUARIO */
+.user-destaque{
+    display: flex;
+    background-image: linear-gradient(to right, #805EDB, #3F2A7A );
+    height: clamp(0px, 10vmax, 150px);
+    width: 80%;
+    border-radius: 30px;
+    box-shadow: 7px 10px 2px 2px #37285f;
+    align-items: center;
+}
+
+/* IMAGEM DO USUARIO */
+.img-user{
+    background-image: linear-gradient(to bottom, #000000, #F4FF26 );
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+/* MENSAGEM AO USUARIO */
+.saudations{
+    font-size: 2rem;
+    margin-left: 30px;
+    background: linear-gradient(to right, #F3C5A2, #FFFFFF);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* NOME DO USUARIO */
+.fs-name{
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+
+/* BOTAO DE MENU */
+.nav{
+    height: clamp(0px, 10vmax, 150px);
+    width: clamp(0px, 10vmax, 150px);
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SIMBOLO MENU */
+.material-symbols-outlined.menu{
+    color: #148038;
+    font-size: 70px;
+}
+
+hr{
+    border-color: white;
+    border-width: 1px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* CONTAIENR DE FUNCIONALIDADES */
+.funcionalidades{
+    width: 100%;
+    margin: 50px;
+}
+
+/* CONTAINER DOS BUTOES */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* REGRAS DOS BOTOES */
+.button {
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    height: clamp(0px, 10vmax, 150px);
+    width: 35%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* REGRAS DO BOTAO MULTI-FUNCAO */
+.button-sec {
+    width: 10%;
+    min-width: 150px;
+}
+
+/* SIMBOLO RECEITA */
+.up-arrow {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+/* SIMBOLO DESPESA */
+.material-symbols-outlined {
+    font-size: 90px;
+    font-weight: 900;
+    color: white;
+}
+
+/* TEXTOS DOS BOTES */
+.button-content{
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* TEXTO DESTAQUE DOS BOTOES */
+.button-wheight{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* BOTAO RECEITA */
+.receita{
+    background-image: linear-gradient(to right, #64B05A, #4B8443 );
+    box-shadow: 7px 10px 2px 2px #2c5227;
+}
+
+/* BOTAO DESPESA */
+.despesa{
+    background-image: linear-gradient(to right, #d14245, #831D1E );
+    box-shadow: 7px 10px 2px 2px #631b1c;
+}
+
+/* BOTAO MULTI-FUNCAO */
+.most-options{
+    background-image: linear-gradient(to right, #A728AA, #721674 );
+    box-shadow: 7px 10px 2px 2px #5b135c;
+}
+
+/* REGRA GERAL DOS CONTAINERS DE INFORMACOES */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #F3C5A2, #836752 );
+    padding: 20px;
+    margin: 50px 0;
+    border-radius: 15px;
+    box-shadow: 7px 10px 2px 2px #574b41;
+    overflow: hidden;
+}
+
+/* SECAO OVERVIEW */
+.overview-tittle{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    text-transform: uppercase;
+    background: linear-gradient(to right, #721674, #a59488);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.period{
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.overview-topic{
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.overview-data{
+    width: 50%;
+    text-align: end;
+    font-weight: 900;
+}
+
+.saldo{
+    color: white;
+}
+
+
+/* SECAO REGISTROS */
+.register p{
+    display: flex;
+    background-color: #D9D9D9;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.register-time{
+    font-weight: 700;
+}
+
+.register-topic{
+    margin-left: 5px;
+}
+
+.register-data{
+    width: max-content;
+    font-weight: 900;
+    margin-left: auto;
+}
+
+.reg-2{
+    margin-left: 20px;
+}
+
+.reg-3{
+    margin-left: 40px;
+}
+
+
+/* SECAO OBJETIVOS */
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D9D9D9;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    min-width: 100%;
+    /* justify-content: space-between; */
+    margin: 0 20px;
+    opacity: 0;
+}
+
+.item h3{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    background: linear-gradient(to right, #9088E7, #1C224D);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.item p{
+    margin-bottom: 10px;
+}
+
+/* CARROSSEL */
+.carrossel {
+    display: flex;
+    animation: carrosselAnimacao 20s infinite;
+    overflow-wrap: break-word;
+  }
+
+
+@keyframes carrosselAnimacao {
+    0% {
+    transform: translateX(0);
+    }
+
+    50% {
+    transform: translateX(-100%);
+    }
+    
+    100% {
+    transform: translateX(0);
+    }
+}
+
+.carrossel .item:nth-child(1) {
+    animation: slide1 20s linear infinite;
+}
+
+.carrossel .item:nth-child(2) {
+    animation: slide2 20s linear infinite;
+}
+
+@keyframes slide1 {
+    0%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slide2 {
+    50%{
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+}
+
+/*CONTINUACAO ESTILIZACAO DOS  DOS ITENS */
+.objectives-topic{
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 900;
+    background: linear-gradient(to right, #721674, #a59488);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.objectives-data{
+    width: 50%;
+    text-align: end;
+    font-weight: 900;
+}
+
+.dt-lmt-obj-data{
+    color: white;
+    background-color: #433A8F;
+    width: max-content;
+    margin-left: auto;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/* BARRA DE PROGRESSO  */
+.progresso{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.progresso p {
+    width: max-content;
+    font-weight: 900;
+    align-items: center;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.barra-container {
+    max-width: 70%;
+    flex-grow: 1;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* BARRA PROGRESSO ITEM 1 */
+.barra-progresso {
+    width: 13.33%;
+    height: 100%;
+    background-image: linear-gradient(to right, #433A8F, #131029 );
+    border-radius: 15px;
+}
+
+/* BARRA PROGRESSO ITEM 2 */
+.barra-progresso2 {
+    width: 80%;
+    height: 100%;
+    background-image: linear-gradient(to right, #433A8F, #131029 );
+    border-radius: 15px;
+}
+
+/* MENSAGEM */
+.observations{
+    background-color: #805ED;
+    text-align: center;
+    font-size: 15px;
+    border: solid white 2px;
+}
+
+.observations a b, .observations a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.observations p{
+    color: white;
+}
+
+.observations a:hover{
+    text-decoration: underline;
+}
+
+.observations p, footer p{
+    margin-bottom: 5px;
+    font-family: roboto;
+}
+
+/* RODAPE */
+footer{
+    background-color: #433A8F;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+}
